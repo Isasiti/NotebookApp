@@ -10,6 +10,14 @@ class Note:
     creation_time: datetime = field(default_factory=datetime.now)
     tags: List[str] = field(default_factory=list)
 
+    def __init__(self, code: int = 0, title: str = "", text: str = "", importance: str = "LOW"):
+        self.code = code
+        self.title = title
+        self.text = text
+        self.creation_date = datetime.now()
+        self.importance = importance
+        self.tags = []
+
     def __str__(self):
         tag_str = ', '.join(self.tags)
         return f'Code: {self.code}\nCreation date: {self.creation_time}\n{self.title}: {self.text}\nTags: {tag_str}\n---\n'
