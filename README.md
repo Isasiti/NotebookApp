@@ -30,7 +30,7 @@ parámetro `default_factory` para inicializar el atributo con una lista vacía.
 
 ```
 Code: <code>
-Creation date: <creation date>
+Creation date: <creation date>vcbcfvb
 <title>: <text>
 ```
 5. El método `add_tag` de la clase `Note` debe verificar que el tag no exista en la lista de tags antes de agregarlo.
